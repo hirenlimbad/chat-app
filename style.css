@@ -88,7 +88,21 @@ body {
 	}
   }
   
-
+  @media only screen and (min-width: 420px) {
+	.introduction p {
+			font-size: 2px;
+			display: block;
+		  }
+	.introduction .typing-demo {
+	width: 40ch;
+	animation: typing 4s steps(30), blink .5s step-end infinite alternate;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 3px solid;
+	font-size: 20px;
+	text-align: center;
+	}
+  }
 
 
 
