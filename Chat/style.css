@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+
+*{
+	font-family: 'Tilt Neon', cursive;
+}
+
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+}
+
+.gradient-background {
+    height: 600px;
+     background: linear-gradient(62deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+       animation: gradient 15s ease infinite; 
+        background-size: 400% 400%;
+		
+    
+  }
+  @-webkit-keyframes gradient{
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+       background-position: 0% 50%;
+    }
+  }
+  @keyframes gradient{
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+       background-position: 0% 50%;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+/* introduction part */
+
+.introduction p{
+	margin: 25% 0% ;
+	font-size: 2em;
+  	color: black;
+}
+
+/* typing animation */
+.introduction .typing-demo {
+	width: 50ch;
+	animation: typing 4s steps(30), blink .5s step-end infinite alternate;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 3px solid;
+	font-size: 2em;
+	text-align: center;
+  }
+  
+  @keyframes typing {
+	from {
+	  width: 0
+	}
+  }
+	  
+  @keyframes blink {
+	50% {
+	  border-color: transparent
+	  
+	}
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* chat app code below */
+.chat-container {
+	max-width: 500px;
+	margin: 10% auto;
+	background-color: #ffffff68;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	overflow: auto;
+	padding: 20px;
+	position: static;
+	border: #00000090 dotted 2px;
+	box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+
+}
+
+
+.profile{
+	display: flex;
+}
+
+
+.chat-header {
+	background-color: #001eff34;
+	color: #280505;
+	border-radius: 20px;
+}
+
+
+#btnclear{
+	background-color: #d63333;
+	color: white;
+	border: none;
+	border-radius: 10%;
+	padding: 10px;
+	cursor: pointer;
+	margin-left: 4px;
+}
+
+img{
+	height: 40px;
+	padding: 15px ;
+	border-radius: 100%;
+	margin-top: 4px;
+}
+
+img :hover{
+	height: 50px;
+}
+
+
+.chat-history {
+	height: 400px;
+	overflow-y: scroll;
+	padding: 14px;
+}
+
+.message {
+	background-color: transparent;
+	border-radius: 5px;
+	
+}
+
+
+
+.message.sent {
+	background-color: transparent;
+	color: black;
+	align-self: flex-end;
+	text-align: right;
+
+}
+
+.message :hover{
+	font-size: 17px;
+	transition: .4s;
+}
+
+
+
+.chat-input {
+	display: flex;
+	padding: 10px;
+}
+
+.chat-input input {
+	flex-grow: 1;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	margin-right: 10px;
+	background-color: rgba(249, 249, 249, 0.826);
+	font-size: 16px;
+}
+
+.chat-input button {
+	background-color: #5e4caf;
+	color: white;
+	border: none;
+	border-radius: 10%;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.chat-input :hover{
+	padding: 15px 12px;
+	transition: 0.4s;
+	
+}
+
+
+
+
+@media only screen and (max-width: 920px) {
+	.chat-container {
+	  margin: 3%;
+	  background-size: 700% 700%;
+		max-width: 300px;
+		height: auto;
+	}
+  
+	  p{
+		font-size: 15px;
+	  }
+
+	  #btnclear{
+		display: none;
+	  }
+  
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer goes here */
+
+
+
+footer {
+    background-color: rgba(149, 75, 195, 0.048);
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin: 50% 70px 0px 70px;
+    position: static;
+  }
+  
+  .container {
+    max-width: 1170px;
+    margin: 0 auto;
+    cursor: pointer;
+    
+
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+  }
+  
+  .social-links a {
+    color: #fff;
+    font-size: 1.5em;
+    padding: 0 1em;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+  }
+  
+  .social-links a:hover {
+    transform: scale(1.4);
+    /* color: black; */
+    rotate: 10deg;
+    cursor: pointer;
+    transition: transform .3s linear;
+    transition-delay: .3s;
+  }
+
+
+  
+  .fa {
+    padding-top: 0.2em;
+    cursor: pointer;
+
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.twitter-mention-button{
+	margin: 0% 0% 0% 85%;
+}
