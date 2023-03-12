@@ -59,7 +59,7 @@ body {
 /* introduction part */
 
 .introduction p{
-	margin: 25% 0% ;
+	margin: 10% 0% ;
 	font-size: 2em;
   	color: black;
 }
@@ -282,7 +282,7 @@ footer {
     margin-bottom: 20px;
     cursor: pointer;
     border-radius: 3px;
-    margin: 50% 70px 0px 70px;
+    margin: 20% 70px 0px 70px;
     position: static;
   }
   
