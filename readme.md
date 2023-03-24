@@ -4,6 +4,10 @@
 This is a simple chat application built using Node.js and Socket.IO. The app allows multiple users to chat with each other on the same server. The UI is designed to be user-friendly and visually appealing. Additionally, users can change their usernames as desired.
 
 
+![index.html](Screenshot.png)
+
+
+
 
 
 ## Installation
